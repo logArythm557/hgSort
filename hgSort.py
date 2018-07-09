@@ -3,7 +3,7 @@ import random
 
 randlist = []
 
-for x in range(10):
+for x in range(5):
     randlist.append(random.randint(1, 51))
 
 
@@ -22,7 +22,7 @@ def hgSort(inlist):
                 e.append(x)
             if x > pivot and random.randint(0, 101) < 95:
                 g.append(x)
-            elif len(hg) > 0:
+            else:
                 hg.append(x)
         out = hgSort(l) + e + hgSort(g)
 
